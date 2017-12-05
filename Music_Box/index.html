@@ -13,9 +13,53 @@
 
 <body>
     <div class="container">
-        <nav class="navbar navbar-light">
-            <span class="navbar-brand mb-0 h1"><h1>Sun and the Moon! Day and Night!</h1></span>
-        </nav>
+        <h1>Music Box</h1>
+
+        <audio id="aAudio">
+            <source src="music_notes/a_note.mp3" type="audio/mp3">
+            <source src="music_notes/a_note.ogg" type="audio/oog">
+            <source src="music_notes/a_note.wav" type="audio/wav">
+        </audio>
+        <audio id="bAudio">
+            <source src="music_notes/b_note.mp3" type="audio/mp3">
+            <source src="music_notes/b_note.ogg" type="audio/oog">
+            <source src="music_notes/b_note.wav" type="audio/wav">
+        </audio>
+        <audio id="cAudio">
+            <source src="music_notes/c_note.mp3" type="audio/mp3">
+            <source src="music_notes/c_note.ogg" type="audio/oog">
+            <source src="music_notes/c_note.wav" type="audio/wav">
+        </audio>
+        <audio id="dAudio">
+            <source src="music_notes/d_note.mp3" type="audio/mp3">
+            <source src="music_notes/d_note.ogg" type="audio/oog">
+            <source src="music_notes/d_note.wav" type="audio/wav">
+        </audio>
+        <audio id="eAudio">
+            <source src="music_notes/e_note.mp3" type="audio/mp3">
+            <source src="music_notes/e_note.ogg" type="audio/oog">
+            <source src="music_notes/e_note.wav" type="audio/wav">
+        </audio>
+        <audio id="fAudio">
+            <source src="music_notes/f_note.mp3" type="audio/mp3">
+            <source src="music_notes/f_note.ogg" type="audio/oog">
+            <source src="music_notes/f_note.wav" type="audio/wav">
+        </audio>
+        <audio id="gAudio">
+            <source src="music_notes/g_note.mp3" type="audio/mp3">
+            <source src="music_notes/g_note.ogg" type="audio/oog">
+            <source src="music_notes/g_note.wav" type="audio/wav">
+        </audio>
+
+        <div id="instrument">
+            <div id="a" class="box"></div>
+            <div id="b" class="box"></div>
+            <div id="c" class="box"></div>
+            <div id="d" class="box"></div>
+            <div id="e" class="box"></div>
+            <div id="f" class="box"></div>
+            <div id="g" class="box"></div>
+        </div>
 
     </div>
     <!-- Optional JavaScript -->
@@ -25,6 +69,41 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
     <script>
+        let aNote = document.getElementById('aAudio');
+        $('#a').mousedown(function() {
+            aNote.currentTime = 0;
+            aNote.play();
+        });
+        let bNote = document.getElementById('bAudio');
+        $('#b').mousedown(function() {
+            bNote.currentTime = 0;
+            bNote.play();
+        });
+        let cNote = document.getElementById('cAudio');
+        $('#c').mousedown(function() {
+            cNote.currentTime = 0;
+            cNote.play();
+        });
+        let dNote = document.getElementById('dAudio');
+        $('#d').mousedown(function() {
+            dNote.currentTime = 0;
+            dNote.play();
+        });
+        let eNote = document.getElementById('eAudio');
+        $('#e').mousedown(function() {
+            eNote.currentTime = 0;
+            eNote.play();
+        });
+        let fNote = document.getElementById('fAudio');
+        $('#f').mousedown(function() {
+            fNote.currentTime = 0;
+            fNote.play();
+        });
+        let gNote = document.getElementById('gAudio');
+        $('#g').mousedown(function() {
+            gNote.currentTime = 0;
+            gNote.play();
+        });
     </script>
 </body>
 
