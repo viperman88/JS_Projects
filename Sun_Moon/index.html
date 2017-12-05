@@ -12,14 +12,16 @@
 </head>
 
 <body>
-    <div id="container">
+    <div class="container">
         <nav class="navbar navbar-light">
-            <span class="navbar-brand mb-0 h1"><h1>Sun and the Moon!</h1></span>
+            <span class="navbar-brand mb-0 h1"><h1>Sun and the Moon! Day and Night!</h1></span>
         </nav>
 
         <div id="sky" class="day">
             <div id="orb" class="sun">
-
+                <div id="spot1"></div>
+                <div id="spot2"></div>
+                <div id="spot3"></div>
             </div>
         </div>
 
@@ -35,9 +37,15 @@
             if ($('#orb').hasClass('sun') && $('#sky').hasClass('day')) {
                 $('#orb').removeClass('sun').addClass('moon');
                 $('#sky').removeClass('day').addClass('night');
+                $('#spot1').addClass('visible');
+                $('#spot2').addClass('visible');
+                $('#spot3').addClass('visible');
             } else {
                 $('#orb').removeClass('moon').addClass('sun');
                 $('#sky').removeClass('night').addClass('day');
+                $('#spot1').removeClass('visible');
+                $('#spot2').removeClass('visible');
+                $('#spot3').removeClass('visible');
             }
         });
     </script>
