@@ -1,0 +1,52 @@
+#container {
+    height: 600px;
+    width: 99%;
+}
+
+.navbar-brand>h1 {
+    color: red;
+    text-align: center;
+}
+
+#orb {
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+#sky {
+    height: 100%;
+    width: 100%;
+    padding-top: 60px;
+}
+
+.sun {
+    background-color: #ffdd00;
+    border: 10px solid #f1c40f;
+}
+
+.sun:hover {
+    border: 20px solid #f1c40f;
+}
+
+.moon {
+    background-color: #bdc3c7;
+    border: 10px solid #eaeff2;
+}
+
+.moon:hover {
+    border: 20px solid #eaeff2;
+}
+
+.night {
+    background-color: #2c3e50;
+}
+
+.day {
+    background-color: #37d8e6;
+}
+
+;
+}
