@@ -52,13 +52,13 @@
         </audio>
 
         <div id="instrument">
-            <div id="a" class="box"></div>
-            <div id="b" class="box"></div>
             <div id="c" class="box"></div>
             <div id="d" class="box"></div>
             <div id="e" class="box"></div>
             <div id="f" class="box"></div>
             <div id="g" class="box"></div>
+            <div id="a" class="box"></div>
+            <div id="b" class="box"></div>
         </div>
 
     </div>
@@ -70,37 +70,78 @@
 
     <script>
         let aNote = document.getElementById('aAudio');
-        $('#a').mousedown(function() {
+        $('#a').mouseover(function() {
+            $('#a').removeClass('box').addClass('box2');
+
+            $('#a').mouseout(function() {
+                $('#a').addClass('box').removeClass('box2');
+            });
             aNote.currentTime = 0;
             aNote.play();
         });
+
         let bNote = document.getElementById('bAudio');
-        $('#b').mousedown(function() {
+        $('#b').mouseover(function() {
+            $('#b').removeClass('box').addClass('box2');
+
+            $('#b').mouseout(function() {
+                $('#b').addClass('box').removeClass('box2');
+            });
             bNote.currentTime = 0;
             bNote.play();
         });
+
         let cNote = document.getElementById('cAudio');
-        $('#c').mousedown(function() {
+        $('#c').mouseover(function() {
+            $('#c').removeClass('box').addClass('box2');
+
+            $('#c').mouseout(function() {
+                $('#c').addClass('box').removeClass('box2');
+            });
             cNote.currentTime = 0;
             cNote.play();
         });
+
         let dNote = document.getElementById('dAudio');
-        $('#d').mousedown(function() {
+        $('#d').mouseover(function() {
+            $('#d').removeClass('box').addClass('box2');
+
+            $('#d').mouseout(function() {
+                $('#d').addClass('box').removeClass('box2');
+            });
             dNote.currentTime = 0;
             dNote.play();
         });
+
         let eNote = document.getElementById('eAudio');
-        $('#e').mousedown(function() {
+        $('#e').mouseover(function() {
+            $('#e').removeClass('box').addClass('box2');
+
+            $('#e').mouseout(function() {
+                $('#e').addClass('box').removeClass('box2');
+            });
             eNote.currentTime = 0;
             eNote.play();
         });
+
         let fNote = document.getElementById('fAudio');
-        $('#f').mousedown(function() {
+        $('#f').mouseover(function() {
+            $('#f').removeClass('box').addClass('box2');
+
+            $('#f').mouseout(function() {
+                $('#f').addClass('box').removeClass('box2');
+            });
             fNote.currentTime = 0;
             fNote.play();
         });
+
         let gNote = document.getElementById('gAudio');
-        $('#g').mousedown(function() {
+        $('#g').mouseover(function() {
+            $('#g').removeClass('box').addClass('box2');
+
+            $('#g').mouseout(function() {
+                $('#g').addClass('box').removeClass('box2');
+            });
             gNote.currentTime = 0;
             gNote.play();
         });

@@ -6,13 +6,26 @@
 }
 
 .container>h1 {
-    color: red;
+    font-size: 42pt;
+    color: #db1d2d;
+    text-shadow: 3px 3px #422018;
     text-align: center;
+}
+
+#instrument {
+    height: 310px;
 }
 
 .box {
     display: inline-block;
-    height: 100px;
+    height: 200px;
+    width: 12%;
+    margin-top: 100px;
+}
+
+.box2 {
+    display: inline-block;
+    height: 280px;
     width: 12%;
 }
 
